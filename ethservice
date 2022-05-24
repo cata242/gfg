@@ -1,0 +1,12 @@
+[Unit]
+Description=ETH Miner
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=15s
+ExecStart=/usr/local/bin/bin/ethminer -U -P stratum://7C86A8aa5482c0e35f193187A57f0D659092e916.ram2@eu1.ethermine.org:4444 &
+
+[Install]
+WantedBy=multi-user.target
